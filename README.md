@@ -1,0 +1,1 @@
+# CoreApps Standard Intelligent Language

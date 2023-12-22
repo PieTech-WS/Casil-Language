@@ -1,0 +1,15 @@
+{
+    "#define": {
+        "type": "function",
+        "name": "print",
+        "version": "0.1"
+    },
+    "#parameter": {
+        "content": {
+            "required": true
+        }
+    },
+    "#content": {
+        "^target:py": "print({content})"
+    }
+}

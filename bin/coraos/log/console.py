@@ -1,0 +1,21 @@
+from site_packs.colorama import init, Fore
+
+
+class Log:
+    def __init__(self):
+        init(autoreset=True)
+
+    def process(self, content: str):
+        print(":: {}".format(content))
+
+    def child_process(content: str):
+        print("=> " + content)
+
+    def tip(self, content: str):
+        print(":: " + Fore.LIGHTYELLOW_EX + content)
+
+    def warn(self, content: str):
+        print(":: " + Fore.LIGHTYELLOW_EX + "警告 " + content)
+
+    def error(self, content: str):
+        print(":: " + Fore.LIGHTRED_EX + "错误 " + content)

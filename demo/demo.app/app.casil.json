@@ -1,0 +1,17 @@
+{
+    "#use": [
+        "org.cora.appcore.app.pure.casil->casil_app",
+        "local.src.demo->App"
+    ],
+    "&casil_app.define": {
+        "name": "Demo",
+        "package": "org.cora.demoapp",
+        "author": "2minRain",
+        "version": "0.1",
+        "permissions": [
+            "system.console.content",
+            "system.app"
+        ],
+        "main": "App"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "#use": [
+        "org.cora.casil.essentials.*"
+    ],
+    "#description": {
+        "author": "2minRain",
+        "version": "0.1",
+        "information": "A Grammar Example of Casil@json"
+    },
+    "greet_text": "!text:Hello, World!",
+    "__init__": [
+        "print(greet_text)"
+    ],
+    "greet": {
+        "type": "function",
+        "onCall": "define_prepared",
+        "content": [
+            "print(greet_text)"
+        ]
+    }
+}

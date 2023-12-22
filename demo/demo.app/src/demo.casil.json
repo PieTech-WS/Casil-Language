@@ -1,0 +1,31 @@
+{
+    "#use": [
+        "org.cora.appcore.i18n.LangFile",
+        "org.cora.appcore.console",
+        "org.cora.appcore.app.pure.casil.AppSession->app",
+        "org.qt.python.QtWidgets.*"
+    ],
+    "lang": {
+        "type": "class",
+        "parent": "LangFile"
+    },
+    "&app": {
+        "__init__": {
+            "type": "py_scripts",
+            "content": [
+                "print(\"Hello from __init__ script\")"
+            ]
+        },
+        "greet_text": {
+            "type": "string",
+            "content": "Hello, Casil!"
+        },
+        "greet": {
+            "type": "function",
+            "switch": "Init.finished",
+            "content": [
+                "console.out<-(text=greet_text)"
+            ]
+        }
+    }
+}
